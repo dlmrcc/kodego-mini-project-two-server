@@ -278,7 +278,7 @@ app.put('/api/update/userpassword', function (request, response) {
 const runApp = async () => {
     try {
         await sequelize.authenticate();
-        console.log('Connection has been established successfully. PORT:', PORT);
+        console.log('Connection has been established successfully.');
         app.listen(PORT) // run app with this given port
     } catch (error) {
         console.error('Unable to connect to the database:', error);
