@@ -38,7 +38,7 @@ const User = sequelize.define('users', {
     timestamps: false,
 });
 
-const FaveRecipe = sequelize.define('favoraterecipe', {
+const FaveRecipe = sequelize.define('favoriterecipe', {
     userEmail: {
         type: Sequelize.STRING
     },
@@ -47,7 +47,7 @@ const FaveRecipe = sequelize.define('favoraterecipe', {
     }
 },
     {
-        tableName: 'favoraterecipe',
+        tableName: 'favoriterecipe',
         timestamps: false,
     });
 
